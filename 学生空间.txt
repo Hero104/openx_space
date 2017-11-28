@@ -1,0 +1,328 @@
+现在拿到手的是一个没有node_modules的项目，里面有package.json。我如果根据这个文件来恢复node_module
+npm install ******
+
+一般github上都会有运行介绍，
+1.克隆项目： git clone https://github.com/lzxb/vue-c...
+2.安装nodejs
+3.安装依赖： npm install
+4.启动服务： npm run dev ****
+5.发布代码： npm run dist
+
+#深高职sc地址
+210.39.34.85:8081/sc/login.html
+
+#深高职教务地址
+210.39.34.85:8082/gzjiaowu
+
+#深高职资源库地址
+210.39.34.85:8084/ziyuanku
+
+#深高职教学地址
+210.39.34.85:8084/jiaoxue
+
+#深高职学习地址
+210.39.34.85:8084/xuexi
+
+#深高职学习空间
+http://210.39.34.85/openx-space  
+何文强：431124198701164213
+
+
+
+utilService.isToken(location.href).then(function (res) {
+            $cookieStore.put('openxMsg', true);
+            if (res.code == 0) {
+                runMain();
+            }
+        }, function () {
+            runMain();
+        });
+       
+
+        function runMain() {
+            
+        }
+
+85账号：
+452423198206022415
+
+138账号：
+410211198608174694
+410211198608174653（ 潇一十）
+410211198608174652（有学生）
+
+410482199512117717
+117717
+
+
+432402197809121017
+121017
+
+431223198410043613
+043613
+
+431129199303255212杨敏
+
+测试服务器：
+47.94.58.138        openx     aopeng@!@#$
+
+window.history.back()
+
+http://hy41x1.axshare.com/  新增缓考 报考改动
+
+http://47.94.58.138/openx-space/#/
+431223198410043613
+043613
+
+420521190002222855
+
+410725198608111009
+
+32072419900917588X（李美五）
+
+32072419900913589X（李美一）
+
+JSON.stringify(studentVo)
+
+,{},{reload: true}
+
+     $('.step-bar').remove();
+     $('.step-num span').remove();
+
+.step-header li.step-active span {
+    background: url(../../images/cell-active.png) center top no-repeat;
+}
+
+自己的学习平台 
+120101199206011005／011005
+http://www.openxedu.com/xuexi/index.html
+
+登录问题
+http://123.56.255.86:8080/openx/#/student_login
+http://123.56.255.86:8080/gzjiaowu-openapi/
+
+ws:http://idea.iteblog.com/
+接口文档
+http://5y2nw0.axshare.com 
+
+登录地址
+http://123.56.255.86:8080/openx/#/myhome
+
+
+报道
+1.根据账户id获取学籍信息
+http://192.168.11.63:8080/openapi/mvc/studySpace/onClass/getStudent
+?请求方式：get
+?请求参数：
+?json
+?返回数据结构：
+{
+    "code": "0000",
+    "msg": "操作成功！",
+    "data": {
+        "studentName": "张三",
+        "studentBirthday": "2017-08-15",
+        "studentNationName": "",
+        "studentIDCard": "710"
+    }
+}
+ 未开班学生进行专业申请查询教学点返回一个list
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/noOnClassZhuanYe
+?请求方式：get
+?返回数据结构：
+{"code":"0000","msg":"操作成功！","list":[]}
+短信验证接口
+http://123.56.255.86:8080/gzjiaowu-openapi/mvc/studySpace/onClass/sendMobileVeriyode?mobile=18511315474
+5.报到 提交接口
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/reportSubmit?String mobile=18511315474&&String verifiCode=123456
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/reportSubmit?String mobile=18511315474&&String verifiCode=123456
+?请求方式：get
+返回数据结构：TRUE
+7.纠错 （提交反馈）
+参数：String studentPhoto, String studentName, String studentBirthday, String studentIDCard, String studentNation
+
+http://123.56.255.86:8080/gzjiaowu-openapi/mvc/studySpace/onClass/updateError?studentName=csdc
+
+7.开不开班
+http://123.56.255.86:8080/gzjiaowu-openapi/mvc/studySpace/onClass/getSpecialtyStatus
+http://192.168.11.40:8080/openapi/gzjiaowu-openapi/mvc/studySpace/onClass/getSpecialtyStatus
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/getSpecialtyStatus
+
+
+6.是否为首次登录
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/IsFirstLogin
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/IsFirstLogin
+
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/getSpecialtyListByStructId?structId=511
+
+
+8.确认无误
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/noErrorGetStudent
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/noErrorGetStudent
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/noErrorGetStudent?access_token=5a7309672080a82dcef03f81c24765b2
+
+9.根据教学点获取专业
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/getSpecialtySBaseinfoListByStrctId
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/getSpecialtySBaseinfoListByStrctId
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/getSpecialtySBaseinfoListByStructId?structId=568
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/getSpecialtyListByStructId?structId=511
+
+12.转专业提交接口
+提交方式改为post  参数只有studentName 和 reason
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/specialtySubmit?specialtyName=1
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/specialtySubmit?specialtyName=1
+
+13.查看申请表
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/SpecialtyApply
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/SpecialtyApply
+
+  // 打印
+        $scope.jprint = function(){
+            $("#printArea").jqprint();
+        }
+13查看审批进度
+http://123.56.255.86:8080/gzjiaowu-openapi/mvc/studySpace/onClass/findAllApplyRecord
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/findAllApplyRecord
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/findAllApplyRecord
+
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/findAllApplyRecord
+{"code":"","msg":"OK","data":[{"createUserId":16,"createTime":"2017-09-05 09:30:41","createUser":0},{"createTime":"2017-09-03 17:36:09","auditStatus":null,"createUser":121},{"createTime":"2017-09-03 17:36:36","auditStatus":null,"createUser":111}]}
+
+14确认无误
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/noErrorGetStudent
+
+
+1.学籍异动查询
+
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/findRollChange
+
+2.省市联动
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/getHomeTownCity?provinceId=12
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/getCity?id=760
+
+3.选择异动类型
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/selectChangeType
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/selectChangeType
+3.选择之后提交
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/changeType?id=1
+
+
+4.转教学点申请
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/structApply
+
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/lookApply
+
+
+3.添加信息
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/addRollSubmit?postCode=050700
+
+4.退学申请提交
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/ExitStudySubmit?reason=tuixue
+5.复学申请提交
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/reStudyApplySubmit?reason=fuxue
+6.休学申请提交
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/stopStudySubmit?reason=xiuxue
+7.转教学点申请提交
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/structApplySubmit?reason=xiuxue
+8.班级
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/findClassesByStruct?structId=568 
+9.我的学籍异动----回执证明
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/receiptProve
+
+10.我的教学计划
+http://192.168.11.40:8080/openapi/mvc/studySpace/teachingPlan/teachingPlanList
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/teachingPlan/teachingPlanList?access_token=5a7309672080a82dcef03f81c24765b2
+
+11.我的缴费
+http://192.168.11.40:8080/openapi/mvc/studySpace/myFee/feeList
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/myFee/feeList
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/myFee/feeList?access_token=5a7309672080a82dcef03f81c24765b2
+
+12.填写毕业登记表
+http://192.168.11.40:8080/openapi/mvc/studySpace/roll/addGraduate
+
+18.我的课表
+http://192.168.11.40:8080/openapi/mvc/studySpace/course/courseList 
+
+13.我的申请 ---列表
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/applyList
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/apply/applyList?access_token=8403e66265ad6317cdc7ee108b3fafcc
+
+14.我的申请---申请表  申请证明所需要的反显都在这
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/proveApply
+
+15.我的申请---申请选择类型
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/selectApply 
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/selectApply 
+
+16.我的申请----提交
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/studentApplySubmit?reason=学生证补办申请提交
+17.
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/readApplySubmit?reason=  在读学生证明审批
+18.学生证补办申请预览
+http://192.168.11.40:8080/openapi/mvc/studySpace/apply/studentCardApplyLook?access_token=8403e66265ad6317cdc7ee108b3fafcc   
+ 
+19.我的成绩
+http://192.168.11.40:8080/openapi/mvc/studySpace/score/scoreList?access_token=9db3816e0eacff62b0ea1cb1647832fd
+
+20.我的奖励  true---添加  false---查看
+http://47.94.58.138/gzjiaowuopenapi/openapi/mvc/studySpace/reward/rewardList?access_token=410688ffd87245a0714e2b6fd184f420
+http://192.168.11.40:8080/openapi/mvc/studySpace/reward/rewardList?access_token=66083d21ce47860446a2a9b7274d74b8
+21.我的奖励-查看获奖感言
+http://192.168.11.40:8080/openapi/mvc/studySpace/reward/findReward?id=1&access_token=410688ffd87245a0714e2b6fd184f420  
+22.我的奖励--添加获奖感言
+http://192.168.11.40:8080/openapi/mvc/studySpace/reward/addReward?id=2&content=11111111&access_token=410688ffd87245a0714e2b6fd184f420 
+24. 我的奖励--图片上传
+http://192.168.11.40:8080/openapi/mvc/studySpace/reward/uploadFile?id=2&photo=11111111&access_token=410688ffd87245a0714e2b6fd184f420 
+
+23.我的消息---收件箱
+http://192.168.11.40:8080/openapi/mvc/studySpace/message/messageList?access_token=410688ffd87245a0714e2b6fd184f420
+
+24.我的消息---查看消息详情
+http://192.168.11.40:8080/openapi/mvc/studySpace/message/getMessageDetail?id=1&access_token=410688ffd87245a0714e2b6fd184f420
+http://192.168.11.40:8080/openapi/mvc/studySpace/message/getMessageDetail?id=1462990&access_token=410688ffd87245a0714e2b6fd184f420
+
+25.我的消息---删除(post)
+
+http://192.168.11.40:8080/openapi/mvc/studySpace/message/deleteMessageById?id=1462990&access_token=410688ffd87245a0714e2b6fd184f42
+
+26.我的免修免考 列表
+http://10.98.32.19:8080/openapi/mvc/studySpace/freeTrial/freeTrialList?access_token=66083d21ce47860446a2a9b7274d74b8
+
+http://10.98.32.19:8080/openapi/mvc/studySpace/paper/paperList?access_token=a4b7fe40a82e63350cf303e50d57daa6
+
+
+27.我的论文--显示
+http://192.168.11.40:8080/openapi/mvc/studySpace/paper/paperList?access_token=a4b7fe40a82e63350cf303e50d57daa6
+
+
+28.我的免修免考 -- 审批流
+http://localhost:8080/openapi/mvc/studySpace/freeTrial/findFreeTrialRecord?access_token=96ed195bee4194dad924ca0e77f5c9a3
+29.我的免修免考 -- 下拉
+http://localhost:8080/openapi/mvc/studySpace/freeTrial/applyFreeTrial?access_token=e9e932c8b1783b3624be7c7812c4f368
+
+
+
+
+
+
+
+
+
+taken：
+http://192.168.11.40:8080/openapi/mvc/studySpace/onClass/getStudentUser?access_token=a10876c6330d109e9847a74ebf9c2595
+http://47.94.58.138/gzjiaowuopenapi/mvc/studySpace/onClass/getStudentUser?access_token=a10876c6330d109e9847a74ebf9c2595
+
+
+
+
+get params
+
+
+
+
+
+
+
+
+

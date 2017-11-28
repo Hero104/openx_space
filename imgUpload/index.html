@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>上传文件</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="./css/uploadify.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-8">
+            <form id="uploadForm" action="/imgupload/resource/file/upload" method="post" enctype="multipart/form-data">
+                <div class="form-group"></div>
+                <div class="form-group">
+                    <label for=filescene>使用场景</label>
+                    <select class="form-control" id="filescene" name="filescene">
+                        <option value="face">头像</option>
+                        <option value="entrance">身份证-入学照</option>
+                        <option value="graduation">身份证-毕业照</option>
+                        <option value="course">课程图片</option>
+                        <option value="coursevideo">课程视频</option>
+                        <option value="coursedoc">课程文档</option>
+                        <option value="courseothers">课程其他</option>
+                        <option value="teaching">教务</option>
+                        <option value="awards">奖惩</option>
+                        <option value="exam">修免考</option>
+                        <option value="other">教务其他</option>
+                        <option value="problem">试题</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="orgId">组织机构</label>
+                    <input type="text" name="orgId" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="orgId">扩展名</label>
+                    <input type="text" name="ext" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="ischange">是否需要改名</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="ischange" id="ischange1" value="1">是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="ischange" id="ischange2" value="0" checked="checked">否
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for=isover>是否转码</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="isconvert" id="isover1" value="1">是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="isconvert" id="isover2" value="0" checked="checked">否
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for=isover>是否覆盖</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="isover" id="isover1" value="1">是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="isover" id="isover2" value="0" checked="checked">否
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for=isthumb>是否生成缩略图</label>
+                    <label class="radio-inline">
+                        <input type="radio" name="isthumb" id="isthumb1" value="1">是
+                    </label>
+                    <label class="radio-inline">
+                        <input type="radio" name="isthumb" id="isthumb2" value="0" checked="checked">否
+                    </label>
+                </div>
+                <div class="form-group">
+                    <label for="thumbrulesize">缩略图尺寸</label>
+                    <input type="text" class="form-control"/>
+                </div>
+                <div class="form-group">
+                    <label for="thumbrulesize">上传文件</label>
+                    <input type="file" name="file"/>
+                </div>
+                <input type="hidden" name="access_token" value="1233e"/>
+                <button type="button" class="btn btn-primary" id="submitBtn">提交</button>
+            </form>
+        </div>
+    </div>
+    <!-- <button  type="button" class="btn btn-primary" id="uploadBtn">上传文档</button>-->
+</div>
+<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery.form.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+    $(function () {
+        $("#submitBtn").click(function () {
+            $("#uploadForm").ajaxSubmit({
+                success: function (data, status) {
+                    alert(data.errMessage);
+                    console.log(data);
+                    //alert("上传成功");
+                }
+            });
+        });
+    });
+
+</script>
+</body>
+</html>
